@@ -66,6 +66,7 @@ view model =
                                     [ type_ "checkbox"
                                     , name "foods"
                                     , value food
+                                    , checked <| List.member food model.selectedFoods
                                     , onCheck <| UpdateFoods food
                                     ]
                                     []
